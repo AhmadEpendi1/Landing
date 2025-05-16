@@ -1,0 +1,234 @@
+/* 1. Reset & Dasar */
+html {
+    scroll-behavior: smooth; /* smooth scroll saat klik anchor */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: wheat;
+    color: darkolivegreen;
+  }
+  
+  /* 2. Kontainer Umum */
+  .container {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  /* 3. Header & Navigasi */
+  header {
+    background-color: darkolivegreen;
+    color: wheat;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  /* Header dengan dua bagian: sosial media (kiri) & menu (kanan) */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Sosial media di kiri */
+  .social-media a {
+    color: wheat;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    color: #fffacd;
+  }
+  
+  /* Menu navigasi di kanan */
+  header nav a {
+    color: wheat;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #fffacd;
+  }
+  
+  /* 4. Hero Section dengan efek parallax */
+  .hero {
+    background-image: url("gambar/gambar2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* buat foto tetap saat scroll */
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: wheat;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* overlay supaya teks terbaca */
+    z-index: 1;
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero h2 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  /* 5. About Section */
+  .about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: darkolivegreen;
+    color: wheat;
+  }
+  
+  .about h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 1.05em;
+  }
+  
+  /* 6. Projects Section */
+  .projects {
+    padding: 60px 20px;
+    background-color: darkkhaki;
+    text-align: center;
+    color: darkgreen;
+  }
+  
+  .projects h2 {
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  /* Item project tampil sejajar & center */
+  .project-item {
+    display: inline-block;
+    width: 260px;
+    margin: 0 15px 40px 15px;
+    vertical-align: top;
+    text-align: center;
+  }
+  
+  .project-item img.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px auto;
+    background-color: darkolivegreen;
+  }
+  
+  .project-item h3 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.15em;
+  }
+  
+  .project-item p {
+    font-size: 1em;
+    color: darkolivegreen;
+  }
+  
+  /* 7. Quote Section */
+  .quote {
+    background-image: url("gambar/gambar3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* efek parallax */
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .quote::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* overlay tipis */
+    z-index: 1;
+  }
+  
+  .quote-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .quote-content h2 {
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  
+  /* 8. Contact Section */
+  .contact {
+    padding: 60px 20px;
+    background-color: darkolivegreen;
+    text-align: center;
+    color: wheat;
+  }
+  
+  .contact h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .contact p {
+    font-size: 1.1em;
+  }
+  
+  /* 9. Footer */
+  footer {
+    background-color: darkkhaki;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  
