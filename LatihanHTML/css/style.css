@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.welcoming{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/vecteezy_organic_shapes_art_backgrounds_on_pastel_color_trendy_11491432.svg);
+    background-size: cover;
+    background-position: 0vh;
+    color: cadetblue;
+}
+
+.wrapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.welcoming ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 50px;
+    width: fit-content;
+    align-items: center;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+nav> ul li a{
+    margin: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: teal;
+    text-decoration: none;
+}
+
+h2{
+    margin-top: -100px;
+    margin-bottom: 20px;
+    font-size: 39px;
+    font-family: 'comic sans ms';
+}
+
+.wrapp> p{
+    font-family: 'comic sans ms';
+    color: tomato;
+}
+
+.wrapp> a{
+    margin-top: 70px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-family: 'comic sans ms';
+    color: teal;
+    text-decoration: none;
+}
+
+.myself{
+    height: 90vh;
+    width: 100%;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myself> img{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+}
+
+h3{
+    color: #fdafaf;
+    font: "Georgia", serif;
+    font-size: 40px;
+    padding: 10px 45px;
+    margin: 30px;
+    font-style: italic;
+    border-bottom: groove;
+}
+
+.myself> p{
+    width: 600px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+img{
+    height:180px;
+    width:220px;
+    margin: 10px;
+    border: solid;
+    border-width: 1px;
+}
+
+.myskil{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 80vh;
+    align-items: center;
+}
+
+.myskil> h4{
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 50px;
+    color: teal;
+}
+
+
+.myskil> ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.myskil> ul li{
+    margin: 50px 70px;
+}
+
+.skill-{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'comic sans ms';
+}
+
+.motivation{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    font-family: "Georgia";  
+    color: tomato;  
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+    justify-content: space-around;
+    background-color: teal;
+}
+
+.footer>div> h4{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 20px 0px;
+    color: white;
+}
+
+.footer> div> a,p{
+    text-decoration: none;
+    color: #fdafaf;
+    margin: 7px 0px;
+}
+
+.footer> div{
+    margin: 30px 30px;
+    width: 400px;
+}
+
+.sosmed{
+    display: flex;
+    flex-direction: column;
+}
